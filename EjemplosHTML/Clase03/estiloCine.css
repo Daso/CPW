@@ -1,0 +1,74 @@
+*{
+	font-family: Verdana, Arial, sans-serif;
+
+}
+h1{
+	color:orange;
+
+}
+
+h2{
+	color:green;
+	text-decoration:underline;
+	font-size: 18px;
+
+}	
+
+strong{
+	color:yellow;
+	font-weight: normal;
+	background-color: black;
+
+}
+
+.subrayado{
+	text-decoration:underline;
+	
+}
+
+#principal
+{
+	background-color:black;
+	color:white;
+
+}
+
+p#principal q{
+	color:green;
+
+}
+
+a:link{
+	color:orange;
+
+}
+
+a:visited
+{
+	color:blue;
+}
+
+a:hover{
+	background-color:green;
+	
+}
+
+a:active{
+	background-color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

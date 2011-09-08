@@ -1,0 +1,47 @@
+*{
+	font-family:verdana, arial, sans-serif;
+}
+
+h2{
+text-decoration:underline;
+}
+
+strong{
+	color:blue;
+	background-color:pink;
+	font-weight:normal;
+}
+
+.resaltado{
+	background-color:yellow;	
+}
+
+#principal{
+	
+	background-color:black;
+	color:white;
+
+}
+
+p#anexo q{
+	background-color:blue;
+	color:yellow;
+}
+a:link, a:visited{
+	color:orange;
+}
+
+a:hover{
+	text-decoration:none;
+	color:yellow;
+	background-color:black;
+}
+
+a:active{
+	color:green;
+	background-color:orange;
+
+}
+
+
+
