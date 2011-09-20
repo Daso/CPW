@@ -1,0 +1,35 @@
+body{
+	background-color:blue;
+	font-family:Verdana, arial, sans-serif;
+	color:white;
+}
+
+h1{
+	font-size:18px;
+	text-decoration:underline;
+}
+
+label{
+	font-weight:bold;
+	font-size:16px;
+}
+
+#formulario{
+
+border: 10px solid white;
+width:400px;
+padding:10px;
+}
+.texto{
+background-color:black;
+color:yellow;
+font-weight:bold;
+}
+.boton{
+	background-color:yellow;
+	color:black;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px;
+	margin-top:15px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Formulario de Evaluación</title>
+	<link href="formulario.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<body>
+	<h1>Formulario para postulantes</h1>
+	<div id="formulario">
+		<form method="post" action="evaluador.php" name="form_evalua">
+			<label for="txt_nombre">Nombre:</label> <input type="text" name="txt_nombre" id="txt_nombre" class="texto"/><br/>
+			
+			
+			<label for="txt_password">Password:</label><input type="password" name="txt_password" id="txt_password"class="texto" />
+			
+			
+			
+			<p>Nivel de Conocimientos</p><br/>
+			
+			
+			
+			<input type="radio" id="rd_01" name="rd_nivel" value="1"/>
+			<label for="rd_01">Monstruo en computación</label><br/>
+			
+			<input type="radio" id="rd_02" name="rd_nivel" value="2"/>
+			<label for="rd_02">Estudiante Afanoso</label><br/>
+			
+			<input type="radio" id="rd_03" name="rd_nivel" value="3"/>
+			<label for="rd_03">Cyborg del código</label><br/>
+			
+			
+			<p>Lenguajes que conoce</p><br/>
+			
+			<input type="checkbox" id="ch_01" name="ch_01" value="0" /><label for="ch_01">.NET</label><br/>
+			
+			<input type="checkbox" id="ch_02" name="ch_02" value="1" /><label for="ch_02">Java</label><br/>
+			
+			<input type="checkbox" id="ch_03" name="ch_03" value="2" /><label for="ch_03">PHP</label><br/>
+			
+			<input type="checkbox" id="ch_04" name="ch_04" value="3" /><label for="ch_04">Ruby</label><br/>
+			
+			
+			<input type="submit" value="Enviar" class="boton"/> <input type="reset" value="Restaurar" class="boton"/>
+		</form>
+	</div>
+</body>
+</html>

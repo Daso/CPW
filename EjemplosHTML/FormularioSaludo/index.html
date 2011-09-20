@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Formulario de Saludo</title>
+	<link href="formulario.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<body>
+	<h1>Formulario de proceso de saludo!</h1>
+	<div id="militar">
+		
+	</div>
+	<div id="formulario">
+		<form action="proceso.php" method="post" name="form_saludo" id="formularioSaludo"> 
+		<label for="txt_nombre">Nombre!:</label>
+		<input type="text" id="txt_nombre" name="txt_nombre" /><br />
+		<label for="txt_password">Clave!:</label>
+		<input type="password" id="txt_password" name="txt_password" /><br />
+		
+		<div id="ama">
+		<p>¿Cuánto ama la milicia!?</p>
+				
+		<input type="radio" name="r_ama" value="Mucho!" id="r_1" /><label for="r_1">Mucho!</label><br />
+		
+		<input type="radio" name="r_ama" value="Más que a mi vida" id="r_2" /><label for="r_2">Más que a mi vida!</label><br />
+		
+		<input type="radio" name="r_ama" value="Más que a mi madre" id="r_3" /><label for="r_3">Más que a mi madre!</label><br />
+		
+		<p>Selecciones sus actividades preferidas! </p>
+		
+		<input type="checkbox" name="ch_1" value="5" id="ch_1" />
+		<label for="ch_1">Ser golpeado por mis superiores!</label><br />
+		
+		<input type="checkbox" name="ch_2" value="3" id="ch_2" />
+		<label for="ch_2">Golpear a mis inferiores!</label><br />
+		
+		<input type="checkbox" name="ch_3" value="1" id="ch_3" />
+		<label for="ch_3">Leer!</label><br />
+		
+		
+		
+		</div>				
+		<input class="button"type="submit" value="Saludar!" />
+		<input class="button" type="reset" value="Restaurar!" />
+		
+		
+		</form>
+
+	</div>
+
+</body>
+
+</html>
