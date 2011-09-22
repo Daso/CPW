@@ -20,14 +20,77 @@ height:350px;
 width:200px;
 background-color:orange;
 float:left;
-}
-
-#menu ul{
-	list-style-image:url("cruz.gif");
 
 }
 
+.boton
+{
+	list-style:none;
+}
 
+#menu_superior ul {
+	
+	background-color:white;
+	width:270px;
+	height:30px;
+	padding:12px 5px 0px 8px;
+}
+
+#menu_superior li{
+float:left;
+margin:3px;
+
+}
+
+#menu_superior li a{
+	display:block;
+	
+	width:80px;
+	padding:2px 0px;
+	text-decoration:underline;
+	text-align:center;
+	font-size:10px;
+	color:green;
+	background-color:orange;
+	border:1px solid blue;
+}
+
+#menu_superior li a:hover{
+	color:white;
+	background-color:black;
+
+}
+
+
+#menu ul{	
+	margin:0px;
+	padding:0px;
+}
+
+#menu li{
+	margin:2px;
+	padding:0px;
+}
+
+#menu li a{
+	display:block;
+	width:100px;
+	padding:4px 0px;
+	text-decoration:none;
+	text-align:center;
+	font-size:12px;
+	color:white;
+	background-color:black;
+	border: 1px solid yellow;
+
+}
+
+#menu li a:hover{
+	background-color:white;
+	color: black;
+	text-decoration:underline;
+
+}
 
 #main{
 height:330px;
