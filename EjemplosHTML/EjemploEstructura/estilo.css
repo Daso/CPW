@@ -12,20 +12,31 @@ body{
 #banner{
 	height:150px;
 	width:100%;
-background-color:blue;
-float:left;
+	background-color:blue;
+	float:left;
+	background-image:url('vino.jpeg');
+	background-repeat:no-repeat;
+	
 }
 #menu{
-height:350px;
-width:200px;
-background-color:orange;
-float:left;
+	height:350px;
+	width:200px;
+	background-color:orange;
+	float:left;
 
 }
 
 .boton
 {
 	list-style:none;
+}
+
+#menu_superior{
+	position:relative;
+	top:90px;
+	left:517px;
+	
+	
 }
 
 #menu_superior ul {
@@ -51,7 +62,7 @@ margin:3px;
 	text-align:center;
 	font-size:10px;
 	color:green;
-	background-color:orange;
+	background-color:white;
 	border:1px solid blue;
 }
 
