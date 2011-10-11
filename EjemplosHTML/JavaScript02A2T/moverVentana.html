@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Confirma</title>
+    <script>
+      function moverVentana(aWindow){        
+        var x = 0;
+        actualizarPosicion(x, aWindow);      
+      }
+      
+      function actualizarPosicion(x, aWindow){
+      
+        aWindow.moveBy(2,2);
+        if(x < 100){
+        
+          setTimeout(function(){actualizarPosicion(x, aWindow)},50);
+          x++;
+        
+        }else{
+          aWindow.close();
+        }
+      }
+      
+      miVentana = window.open("","miVentana","left = 100, top = 100, width = 250, height = 150");
+      miVentana.document.write("<h2>Ventana Emergente</h2>");
+      miVentana.moveTo(400,100);
+      moverVentana(miVentana);
+      
+    </script>
+  </head>
+  <body>
+    
+  </body>
+
+</html>
