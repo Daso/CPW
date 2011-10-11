@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Saludo</title>
+    <script>
+      function moverVentana(aWindow){
+        var x = 0;
+        actualizarPosicion(x,aWindow)
+      }
+      
+      function actualizarPosicion(x,aWindow){
+        aWindow.moveBy(2,2);
+        if(x < 100){
+          setTimeout(function(){actualizarPosicion(x,aWindow)},550);
+          x++;
+        }else{
+          aWindow.close();
+        }
+      }
+      
+      miVentana = window.open("","miVentana","left = 100, width = 250, height = 150");
+      miVentana.document.write("Prueba de abrir ventanas");
+      miVentana.moveTo(400,100);
+      moverVentana(miVentana);
+  </script>
+  </head>
+  <body>  
+    
+  </body>
+</html>

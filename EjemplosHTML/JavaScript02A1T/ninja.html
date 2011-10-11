@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ninja</title>
+    <script>
+      var x = 0;
+      var y = 0;
+      function moverNinja(direccion)
+      {
+        switch(direccion.keyCode){
+          case 38:
+            y -= 5;
+            document.getElementById("imagen").style.top = String(y) + "px";
+            break;            
+          case 39:
+            x -= 5;
+            document.getElementById("imagen").style.right = String(x) + "px";
+            break;
+          case 40:
+            y += 5;
+            document.getElementById("imagen").style.top = String(y) + "px";
+            break;
+          case 37:
+            x += 5;
+            document.getElementById("imagen").style.right = String(x) + "px";
+            break;
+        }            
+      }                  
+    </script>
+  </head>
+  <body onkeydown="moverNinja(event)">  
+      <img src="ninja.jpg" id="imagen" style="position:relative;" alt="" />
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
