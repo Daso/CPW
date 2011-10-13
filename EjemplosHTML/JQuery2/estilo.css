@@ -1,0 +1,41 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+body{
+	font: 60% Verdana;
+	color: black;
+	background: white;
+}
+#contenedor{
+	font-size: 1.2em;
+	margin:10px, 2em;
+
+}
+h1{
+	font-size:2.5em;
+	margin-bottom:0;
+}
+.clear-after:after{
+	content:".";
+	display: block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clear-after{display:inline-block;}
+*html .clear-after{height: 1%;}
+.clear-after {display:block;}
+
+.horizontal{
+	float:left;
+	list-style:none;
+	margin: 10px;
+}
+li{
+padding: 0 3px;
+}
+.subNivel{
+	background:#ccc;
+}
+
