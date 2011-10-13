@@ -1,0 +1,28 @@
+body{
+  font: 62.5% Arial, Verdana, sans-serif;
+}
+h1{
+  font-size: 2.5em;
+  margin-bottom: 0;  
+}
+h2{
+  font-size: 1.3em;
+  margin-bottom:.5em;
+}
+h3{
+  font-size: 1.1em;
+  margin-bottom:0;
+}
+.poem{
+  margin: 0 2em;
+}
+.highlight{
+  font-style:italic;
+  border: 1px solid #888;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  background-color: #ffc;
+}
+
+
+
