@@ -1,0 +1,73 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+body{
+	font:90% Arial, Verdana, sans-serif;
+}
+#container{
+	font-size:1.2em;
+	margin:10px 2em;
+}
+h1{
+	font-size:2.5em;
+	margin-bottom:0;
+}
+h2{
+	font-size:1.4em;
+	margin-bottom:.5em;
+}
+h3{
+	font-size:1.2em;
+	margin-bottom:0;
+}
+.departamento{
+	margin: 1em;
+}
+#switcher{
+	float:right;
+	background-color:#ddd;
+	border: 1px solid #000;
+	margin:10px;
+	padding:10px;
+	font-size: .9em;
+}
+#switcher h3{
+	margin:0;
+}
+#switcher .button{
+	width:100px;
+	float:left;
+	text-align:center;
+	margin:10px;
+	padding:10px;
+	background-color:#fff;
+	border-top: 3px solid #888;
+	border-left: 3px solid #888;
+	border-bottom: 3px solid #444;
+	border-right: 3px solid #444;
+}
+#header{
+	clear:both;
+}
+body.mujer .departamento{
+	font-size:1.5em;
+	background:pink;
+}
+body.hombre .departamento{
+	width: 400px;
+	background:blue;
+	color:white;
+}
+.selected{
+	font-weight: bold;	
+	color: orange;
+}
+.hidden{
+	display:none;
+}
+#switcher .hover{
+	cursor:pointer;
+	background-color: #afa;
+}
+	

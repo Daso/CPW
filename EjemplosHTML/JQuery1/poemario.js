@@ -1,7 +1,7 @@
-$(document).ready(
+$('document').ready(
   function(){
-    $('.poem-title').addClass('highlight');
+  
+    $('.poem').addClass('highlight');
   
   }
-
 );
