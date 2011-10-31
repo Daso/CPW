@@ -1,0 +1,114 @@
+/***************************************
+   =default styles
+************************************** */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 62.5% Verdana, Helvetica, Arial, sans-serif;
+  color: #000;
+  background: #fff;
+}
+#container {
+  font-size: 1.2em;
+  margin: 10px 2em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: .5em;
+}
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+a {
+  color: #06581f;
+}
+/***************************************
+=Aslett Clearing Method for floats 
+************************************** */
+.clear-after:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+.clear-after {display: inline-block;}
+/* backslash hack hides from IE Mac \*/
+	* html .clear-after {height: 1%;}
+	.clear-after {display: block;}
+/* end backslash hack */
+
+/***************************************
+   =Chapter 5 styles
+************************************** */
+
+.chapter {
+  width: 42em;
+}
+#f-title {
+  font-size: 1.5em;
+}
+#excerpt {
+  font-style: italic;
+}
+
+/* -----------------------------------
+   =FOOTNOTES
+-------------------------------------- */
+
+span.footnote {
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  margin: 1em 0;
+}
+
+.chapter span.footnote {
+  display: inline;
+}
+.text-reference {
+  font-weight: bold;
+}
+#notes li {
+ margin: 1em 0; 
+}
+
+#notes {
+  margin-top: 1em;
+  border-top: 1px solid #dedede;  
+}
+#footer {
+  margin-top: 1em;
+  border-top: 1px solid #dedede;
+}
+.texto{
+  color:blue;
+}
+
+.pulled{
+  background: #e5e5e5;
+  position:absolute;
+  width: 145px;
+  top: -20px;
+  right: -180px;
+  padding: 12px 5px 12px 10px;
+  font: italic 1.4em "Times New Roman", Times, serif;
+
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Gmaps</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    
+    <script type = "text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    
+    <script type="text/javascript" src="GMaps.js"></script>
+    
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" media="screen"/>
+    
+    <link rel="stylesheet" type="text/css" href = "examples.css" media="screen"/>
+    
+    <script type="text/javascript">
+      var map;
+      $(document).ready(function(){  
+        map = new GMaps({
+          div:'#map',
+          lat: -12.043333,
+          lng: -77.028333                
+        });
+        
+      map.setContextMenu({
+        control:'map',
+        options:[{
+          title:'Agregar Marcador',
+          name:'add_marker',
+          action: function(e){
+            this.addMarker({
+              lat: e.latLng.lat(),
+              lng: e.latLng.lng(),
+              title: 'Nuevo Marcador'     
+            });
+          this.hideContextMenu();
+          }          
+        },{
+          title:'Centrar en mapa',
+          name:'center_here',
+          action: function(e){
+            this.setCenter(e.latLng.lat(), e.latLng.lng());
+          
+          }                
+        },{
+          title: 'Esto no hace nada',
+          name: 'do_nothing',
+          action: function(){
+            window.alert('Esto no hace nada')
+          }
+        
+        }]                  
+      });  
+    });
+    </script>        
+  </head>  
+<body>
+  <h1>Ejemplo GMaps</h1>  
+  <div class="row">
+    <div class="span11">
+      <div id="map"></div>
+    </div>
+  </div>
+</body>
+</html>

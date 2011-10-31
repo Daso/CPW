@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Gmaps</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    
+    <script type = "text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    
+    <script type="text/javascript" src="GMaps.js"></script>
+    
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" media="screen"/>
+    
+    <link rel="stylesheet" type="text/css" href = "examples.css" media="screen"/>
+    
+    <script type="text/javascript">
+      var map;
+      $(document).ready(function(){  
+        map = new GMaps({
+          div:'#map',
+          lat: -15.043333,
+          lng: -79.028333                
+        });   
+      map.geolocate({
+        success:function(position){
+          map.setCenter(position.coords.latitude,position.coords,longitude);                  
+        },
+        error:function(error){
+          alert('Falló la Geolocalización'+error.message);
+        },
+        not_supported:function(){
+          alert("Cambia de browser!");
+          
+        },
+        always:function(){
+          alert("Listo!");
+        
+        }           
+      });     
+    });
+    </script>        
+  </head>  
+<body>
+  <h1>Ejemplo GMaps Geolocate</h1>  
+  <div class="row">
+    <div class="span11">
+      <div id="map"></div>
+    </div>
+  </div>
+</body>
+</html>
