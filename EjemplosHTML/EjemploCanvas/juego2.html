@@ -1,0 +1,26 @@
+<!doctype>
+<html>
+<head>
+<title>Origami frog</title>
+<script>
+  function init(){
+    setInterval(increase,250);
+  
+  }
+  
+  function increase(){
+    document.f.secs.value = String(.25+Number(document.f.secs.value));
+  
+  }
+</script>
+</head>
+<body onLoad = "init();">
+  <form name = "f">
+    <input type = "text" name = "secs" value = "0" />
+  
+  </form>
+
+
+</body>
+
+</html>

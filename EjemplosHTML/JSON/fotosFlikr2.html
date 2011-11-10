@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    img{height: 100px; float: left;}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</head>
+<body>
+  <div id="images"></div>
+<script>
+  $.getJSON('http://semanaeconomica.com/front/index.json?jsoncallback=?',
+  function(data){
+    $(data).each(function(i, item){
+      console.log(item.titulo);
+    });
+  });
+    
+</script>
+  
+  </body>
+</html>
