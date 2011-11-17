@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Ejemplo Movimiento</title>
+    <style>	    
+    form{
+      width:330px;
+      margin:20px;
+      background-color:green;
+      padding:20px;
+    
+    }        
+	</style>
+<script type="text/javascript">
+  var cwidth = 400;
+  var cheight = 300;
+  var ctx;
+  var everything = [];
+  var tid;
+  
+function Ball(sx,sy,rad,stylesstring){
+  this.sx = sx;
+  this.sy = sy;
+  this.rad = rad;
+  this.draw = drawball;
+  this.fillstyle = stylesstring;
+}
+
+function drawball(){
+  ctx.fillStyle = this.fillstyle;
+  ctx.beginPath();
+  ctx.arc(this.sx,this.sy,this.rad,0,Math.PI*2,true);
+  ctx.fill();
+}
+
+function moveball(dx,dy){
+  this.sx += dx;
+  this.sy += dy;
+}
+
+var cball = new Ball(20,200,10,"rgb(250,0,0)");
+
+function myrectangle(sx,sy,swidth,sheight,stylestring){
+  this.sx = sx;
+  this.sy = sy;
+  this.swidth = swidth;
+  this.sheight = sheight;
+  this.fillstyle = stylestring;
+  this.draw = drawrects;
+  this.moveit = moverect;
+}
+
+function drawrects(){
+  ctx.fillStyle = this.fillstyle;
+  ctx.fillRect(this.sx,this.sy,this.swidth,this.sheight);  
+}
+
+function moverect(dx,dy){
+  this.sx += dx;
+  this.sy += dy;
+}
+
+var target = new myrectangle(100,100,80,200,"rgb(0,90,15)");
+everything.push(target);
+everything.push(cball);
+
+function init(){
+  ctx = document.getElementById('canvas').getContext('2d');
+  drawwall();
+}
+
+function drawwall(){
+  ctx.clearRect(0,0,cwidth,cheight);
+  var i;
+  for(i = 0; i < everything.length;i++){
+    everything[i].draw();
+  }
+}
+
+function change(){
+  cball.sx += Number(document.f.hv.value);
+  cball.sy += Number(document.f.vv.value);
+  drawwall();
+  return false;
+
+}	
+</script>
+</head>
+<body onLoad="init();">  
+<canvas id="canvas" width="400" height="300">
+Your browser doesn't support the HTML5 element canvas.
+</canvas>  
+<br/>
+<form name="f" id="f" onSubmit="return change();">
+Move ball: <br/> 
+Horizontal displacement <input name="hv" id="hv" value="4" type="number" min="-100" max="100" /> 
+<br>
+Vertical displacement <input name="vv" id="vv" value="8" type="number" min="-100" max="100"/>
+<input type="submit" value="CHANGE"/>
+</form> 
+</body>
+</html>
